@@ -1,7 +1,7 @@
 # IEEE-Hackathon
 ##subtitle
 
-# Hi, I'm Katherine! 👋
+# Hi, WE are Believers Team ! 👋
 
 ```
 int main(){
