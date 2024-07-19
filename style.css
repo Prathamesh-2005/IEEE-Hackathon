@@ -34,6 +34,23 @@
     appearance: none;
 }
 
+body.dark-mode {
+    --clr-primary: #4CAF50;
+    --clr-danger: #FF5722;
+    --clr-success: #4CAF50;
+    --clr-white: #333;
+    --clr-info-dark: #f5f5f5;
+    --clr-info-light: #333;
+    --clr-dark: #f5f5f5;
+    --clr-warning: #FF5722;
+    --clr-light: rgba(255, 255, 255, 0.18);
+    --clr-primary-variant: #4CAF50;
+    --clr-dark-variant: #f5f5f5;
+    --clr-color-background: #333;
+    background: var(--clr-color-background);
+    color: var(--clr-white);
+}
+
 body {
     background: black;
     font-family: 'Poppins', sans-serif;
@@ -51,6 +68,7 @@ body {
     gap: 1.8rem;
     grid-template-columns: 14rem auto 14rem;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 a {
@@ -403,6 +421,30 @@ main .recent_order a {
     width: 4.2rem;
     cursor: pointer;
     border-radius: var(--border-radius-1);
+}
+
+.theme-toggler {
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-between;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggler span.active {
+    background-color: var(--clr-primary);
+    color: #fff;
 }
 
 .right .theme-toggler span {
