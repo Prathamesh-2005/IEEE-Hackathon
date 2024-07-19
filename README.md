@@ -1,6 +1,4 @@
-# IEEE-Hackathon
+IEEE-Hackathon 2024
 
-
-# Hi, WE are Believers Team ! 👋
 
 
