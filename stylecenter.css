@@ -1,0 +1,177 @@
+/* main section */
+main {
+    margin-top: 1.4rem;
+    width: auto;
+}
+
+main input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--clr-dark);
+}
+
+main .date {
+    display: inline-block;
+    background-color: var(--clr-white);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+main .insights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    cursor: pointer;
+}
+
+main .insights>div {
+    background-color: var(--clr-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+main .insights>div:hover {
+    box-shadow: none;
+}
+
+main .insights>div span {
+    background: coral;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--clr-white);
+    font-size: 2rem;
+}
+
+main .insights>div.expenses span {
+    background: var(--clr-danger);
+}
+
+main .insights>div.income span {
+    background: var(--clr-success);
+}
+
+main .insights>div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights>div .middle h1 {
+    font-size: 1.6rem;
+}
+
+main h1 {
+    color: var(--clr-dark);
+}
+
+main .insights h1 {
+    color: var(--clr-dark);
+}
+
+main .insights h3 {
+    color: var(--clr-dark);
+}
+
+main .insights p {
+    color: var(--clr-dark);
+}
+
+main .insights .progress {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-display: var(--clr-success);
+    position: relative;
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+}
+
+main .insights svg {
+    height: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+}
+
+main .insights svg circle {
+    fill: none;
+    stroke: var(--clr-primary);
+    transform: rotate(270deg, 80px, 80px);
+    stroke-width: 5;
+}
+
+main .insights .sales svg circle {
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+}
+
+main .insights .expenses svg circle {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 150;
+}
+
+main .insights .income svg circle {
+    stroke: var(--clr-success);
+}
+
+main .insights .progress .number {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .recent_order {
+    margin-top: 2rem;
+}
+
+main .recent_order h2 {
+    color: var(--clr-dark);
+}
+
+main .recent_order table {
+    background-color: var(--clr-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    color: var(--clr-dark);
+    cursor: pointer;
+}
+
+main .recent_order table:hover {
+    box-shadow: none;
+}
+
+main table tbody tr {
+    height: 3.8rem;
+    border-bottom: 1px solid var(--clr-white);
+    color: var(--clr-dark-variant);
+}
+
+main table tbody td {
+    height: 3.8rem;
+    border-bottom: 1px solid var(--clr-dark);
+    cursor: pointer;
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+main .recent_order a {
+    text-align: center;
+    display: block;
+    margin: 1rem;
+}
