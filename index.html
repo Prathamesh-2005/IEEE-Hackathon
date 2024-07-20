@@ -7,10 +7,7 @@
     <title>Financial Dashboard</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="stylemain.css">
-    <link rel="stylesheet" href="stylecenter.css">
-    <link rel="stylesheet" href="styleleft.css">
-    <link rel="stylesheet" href="styleright.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -44,7 +41,9 @@
                     <span class="material-symbols-outlined">insights</span>
                     <h3>Statistics</h3>
                     <a href="#">
-                        <span class="material-symbols-outlined"> equalizer</span>
+                        <span class="material-symbols-outlined">
+                            equalizer
+                        </span>
                         <h3>Graphs</h3>
                     </a>
                     <a href="#">
@@ -83,10 +82,10 @@
         <!--Main section start-->
         <main>
             <h1>Personal Financial Dashboard</h1>
-
-            <div class="date">
-                <input type="date">
-            </div>
+            <div class="Date"><div class="date">
+                <input aria-label="date" type="date">
+            </div></div>
+            
 
             <div class="insights">
                 <!--Start sales-->
@@ -109,7 +108,7 @@
                 <!--End sales-->
 
                 <!--Start expenses-->
-                <div class="income">
+                <div class="sales income">
                     <span class="material-symbols-outlined">local_mall</span>
                     <div class="middle">
                         <div class="left">
@@ -204,9 +203,12 @@
                 <button id="menu_bar">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
+                <div>
+                </div>
+
                 <div class="theme-toggler">
                     <span class="material-symbols-outlined">light_mode</span>
-                    <span class="material-symbols-outlined">dark_mode</span>
+                    <span class="material-symbols-outlined" id="dark-mode-button">dark_mode</span>
                 </div>
                 <div class="profile">
                     <div class="info">
@@ -214,9 +216,10 @@
                         <p>Admin</p>
                         <small class="text-muted"></small>
                     </div>
-                    <div class="profile-photo">
-                        <img src="download (1).jpeg" alt="">
-                    </div>
+
+                </div>
+                <div class="profile-photo">
+                    <img src="assets/sanket.jpg" alt="">
                 </div>
             </div>
             <!--Start recent updates-->
