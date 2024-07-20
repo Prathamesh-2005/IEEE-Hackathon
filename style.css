@@ -68,7 +68,6 @@ body {
     gap: 1.8rem;
     grid-template-columns: 14rem auto 14rem;
     margin: 0 auto;
-    cursor: pointer;
 }
 
 a {
@@ -302,6 +301,9 @@ main .insights p {
 }
 
 main .insights .progress {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-display: var(--clr-success);
     position: relative;
     height: 68px;
     width: 68px;
@@ -375,7 +377,6 @@ main table tbody tr {
     height: 3.8rem;
     border-bottom: 1px solid var(--clr-white);
     color: var(--clr-dark-variant);
-    cursor: pointer;
 }
 
 main table tbody td {
@@ -429,7 +430,6 @@ main .recent_order a {
     justify-content: space-between;
     height: 1.6rem;
     width: 4.2rem;
-    cursor: pointer;
     border-radius: var(--border-radius-1);
 }
 
@@ -532,6 +532,7 @@ main .recent_order a {
     width: 50px;
     line-height: 50px;
     align-items: center;
+    cursor: pointer;
 }
 
 .right .sales_analytics .item .icon {
