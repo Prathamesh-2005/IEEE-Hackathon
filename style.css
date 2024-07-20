@@ -47,7 +47,7 @@ body.dark-mode {
     --clr-light: rgba(255, 255, 255, 0.18);
     --clr-primary-variant: #4CAF50;
     --clr-dark-variant: #f5f5f5;
-    --clr-color-background: #333;
+    --clr-color-background: #000000d3;
     --clr-theme:white;
     background: var(--clr-color-background);
     color: var(--clr-white);
@@ -192,7 +192,7 @@ aside .sidebar a span {
 }
 
 aside .sidebar a:last-child {
-    position: absolute;
+    /* position: absolute; */
     bottom: 1rem;
     width: 100%;
 }
@@ -247,9 +247,16 @@ main .date {
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
     box-shadow:var(--box-shadow) ;
+    transition: all 0.3s ease;
+    margin: 30px 0;
 }
 main .date:hover{
     box-shadow: none;
+    cursor: pointer;
+}
+
+#DATE{
+    cursor: pointer;
 }
 
 main .insights {
@@ -333,6 +340,7 @@ main .insights .progress {
 main .insights svg {
     height: 150px;
     height: 150px;
+    width: 100px;
     position: absolute;
     top: 0;
 }
@@ -548,10 +556,12 @@ main .recent_order a {
     padding: 1.4rem var(--card-padding);
     border-radius: var(--border-radius-3);
     box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
 }
 
 .right .sales_analytics .item:hover {
     box-shadow: none;
+    cursor: pointer;
 }
 
 .right .sales_analytics .item .icon1 {
