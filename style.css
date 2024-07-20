@@ -21,7 +21,8 @@
 
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
-    --box-shadow: 0 2rem 3rem var(--clr-light);
+    --box-shadow: 0 2rem 3rem var(--clr-dark);
+    --clr-theme:black;
 }
 
 * {
@@ -35,20 +36,24 @@
 }
 
 body.dark-mode {
-    --clr-primary: #4CAF50;
+    --clr-primary: #7380ec;
     --clr-danger: #FF5722;
     --clr-success: #4CAF50;
     --clr-white: #333;
     --clr-info-dark: #f5f5f5;
     --clr-info-light: #333;
     --clr-dark: #f5f5f5;
-    --clr-warning: #FF5722;
+    --clr-warning: #ff4edc;
     --clr-light: rgba(255, 255, 255, 0.18);
     --clr-primary-variant: #4CAF50;
     --clr-dark-variant: #f5f5f5;
     --clr-color-background: #333;
+    --clr-theme:white;
     background: var(--clr-color-background);
     color: var(--clr-white);
+}
+#dark-mode-button{
+    color: var(--clr-theme);
 }
 
 body {
@@ -135,9 +140,13 @@ b {
     color: var(--clr-warning);
 }
 
+
 /* aside */
 aside {
     height: 100vh;
+}
+.logo{
+    color: var(--clr-dark);
 }
 
 aside.top {
@@ -237,6 +246,10 @@ main .date {
     border-radius: var(--border-radius-1);
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
+    box-shadow:var(--box-shadow) ;
+}
+main .date:hover{
+    box-shadow: none;
 }
 
 main .insights {
@@ -267,6 +280,10 @@ main .insights>div span {
     border-radius: 50%;
     color: var(--clr-white);
     font-size: 2rem;
+}
+
+#income2{
+    background: rgb(21, 194, 220);
 }
 
 main .insights>div.expenses span {
@@ -325,6 +342,10 @@ main .insights svg circle {
     stroke: var(--clr-primary);
     transform: rotate(270deg, 80px, 80px);
     stroke-width: 5;
+}
+
+.sales{
+    width: 100%;
 }
 
 main .insights .sales svg circle {
@@ -631,7 +652,7 @@ main .recent_order a {
         margin-top: 1.8rem;
     }
 
-    main.insights {
+    main .insights {
         display: flex;
         /* grid-template-columns: repeat(1, 1fr); */
         justify-content: space-evenly;
@@ -654,6 +675,20 @@ main .recent_order a {
     .sales {
         width: 70%;
     }
+    .sales_analytics {
+        width: 65%;
+
+    }
+    .right {
+        margin-top: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
 
 }
 
@@ -670,21 +705,7 @@ main .recent_order a {
         grid-template-columns: 1fr;
     }
 
-    .sales_analytics {
-        width: 65%;
 
-    }
-
-    .right {
-        margin-top: 2.4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
 
     .Date {
         width: 100%;
