@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Page</title>
+    <link rel="stylesheet" href="stylereport.css">
+</head>
+<body>
+    <div class="container">
+        <div class="report-card">
+            <h3>Report a Bug/Complaint</h3>
+            <form id="report-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="issue-type">Issue Type:</label>
+                <select id="issue-type" name="issue-type" required>
+                    <option value="bug">Bug</option>
+                    <option value="complaint">Complaint</option>
+                </select>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="confirmation" class="hidden">Thank you for your report!</div>
+        </div>
+    </div>
+    
+    <script src="scriptreport.js"></script>
+</body>
+</html>

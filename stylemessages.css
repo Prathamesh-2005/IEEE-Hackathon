@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    width: 400px;
+}
+
+.platform {
+    width: 100px;
+    /* Increased width for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    /* Added padding for better spacing */
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.message-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.message-content h3 {
+    margin: 0;
+    color: #333;
+}
+
+.message-content p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #888;
+}

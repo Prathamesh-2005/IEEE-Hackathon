@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="stylesettings.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="settings-card">
+            <h3>Dashboard Settings</h3>
+            <form id="settings-form">
+                <label for="theme">Theme:</label>
+                <select id="theme" name="theme" required>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+                
+                <label for="currency">Default Currency:</label>
+                <select id="currency" name="currency" required>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                
+                <label for="notifications">Enable Notifications:</label>
+                <input type="checkbox" id="notifications" name="notifications">
+                
+                <label for="email-reports">Email Reports:</label>
+                <input type="checkbox" id="email-reports" name="email-reports">
+                
+                <label for="password">Change Password:</label>
+                <input type="password" id="password" name="password" placeholder="New Password">
+                
+                <label for="profile-visibility">Profile Visibility:</label>
+                <select id="profile-visibility" name="profile-visibility" required>
+                    <option value="public">Public</option>
+                    <option value="private">Private</option>
+                </select>
+                
+                <label for="refresh-rate">Data Refresh Rate:</label>
+                <select id="refresh-rate" name="refresh-rate" required>
+                    <option value="5min">Every 5 Minutes</option>
+                    <option value="15min">Every 15 Minutes</option>
+                    <option value="30min">Every 30 Minutes</option>
+                    <option value="1hr">Every 1 Hour</option>
+                </select>
+
+                <div class="buttons">
+                    <button type="submit">Save Settings</button>
+                    <button type="button" id="reset-button">Reset to Default</button>
+                </div>
+            </form>
+            <div id="confirmation" class="hidden">Settings saved successfully!</div>
+        </div>
+    </div>
+    
+    <script src="scriptsettings.js"></script>
+</body>
+</html>
