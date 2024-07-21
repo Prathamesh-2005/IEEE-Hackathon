@@ -15,20 +15,20 @@
     <div class="container">
 
         <!--aside section start-->
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <h2>PICT<span class="danger">-IEEE</span></h2>
-                </div>
-                <div class="close" id="close_btn">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </div>
-            </div>
+        <aside id="mySidebar">
+
             <!--end top-->
 
             <div class="sidebar">
+                <div class="logo ntd">
+                    <h2>PICT<span class="danger">-IEEE</span></h2>
+                    <span class="material-symbols-outlined" id="menu_barOff">
+                        menu
+                    </span>
+                </div>
+                <!-- <div class="close" id="close_btn">
+                    
+                </div> -->
                 <a href="#">
                     <span class="material-symbols-outlined">grid_view</span>
                     <h3>Dashboard</h3>
@@ -40,41 +40,42 @@
                 <a href="#">
                     <span class="material-symbols-outlined">insights</span>
                     <h3>Statistics</h3>
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                            equalizer
-                        </span>
-                        <h3>Graphs</h3>
-                    </a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">mail_outline</span>
-                        <h3>Messages</h3>
-                    </a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">receipt_long</span>
-                        <h3>Products</h3>
-                    </a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">report_gmailerrorred</span>
-                        <h3>Reports</h3>
-                    </a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">settings</span>
-                        <h3>Settings</h3>
-                    </a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">add</span>
-                        <h3>Add Product</h3>
-                    </a>
-                    <div class="item add_products">
-                        <div>
-                            <span class="material-symbols-outlined">more</span>
-                        </div>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        equalizer
+                    </span>
+                    <h3>Graphs</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">mail_outline</span>
+                    <h3>Messages</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <div class="item add_products ntd" >
+                    <div>
+                        <span class="material-symbols-outlined">more</span>
                     </div>
-                    <a href="#">
-                        <span class="material-symbols-outlined">logout</span>
-                        <h3>Logout</h3>
-                    </a>
+                </div>
+                <a href="index.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
             </div>
         </aside>
         <!--aside section end-->
@@ -82,10 +83,12 @@
         <!--Main section start-->
         <main>
             <h1>Personal Financial Dashboard</h1>
-            <div class="Date"><div class="date">
-                <input aria-label="date" type="date">
-            </div></div>
-            
+            <div class="Date">
+                <div class="date">
+                    <input aria-label="date" type="date" id="DATE">
+                </div>
+            </div>
+
 
             <div class="insights">
                 <!--Start sales-->
@@ -207,7 +210,6 @@
                 </div>
 
                 <div class="theme-toggler">
-                    <!-- <span class="material-symbols-outlined">light_mode</span> -->
                     <span class="material-symbols-outlined" id="dark-mode-button">dark_mode</span>
                 </div>
                 <div class="profile">
@@ -225,10 +227,11 @@
             <!--Start recent updates-->
             <div class="recent_update">
                 <h2>Recent Activity</h2>
+                <div class="profile-photo">
+                    <img src="download.jpeg" alt="">
+                </div>
                 <div class="updates">
-                    <div class="profile-photo">
-                        <img src="download.jpeg" alt="">
-                    </div>
+
                     <div class="message">
                         <p><b>Believers</b> presenting their project</p>
                     </div>

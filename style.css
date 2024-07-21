@@ -22,7 +22,7 @@
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
     --box-shadow: 0 2rem 3rem var(--clr-dark);
-    --clr-theme:black;
+    --clr-theme: black;
 }
 
 * {
@@ -47,12 +47,13 @@ body.dark-mode {
     --clr-light: rgba(255, 255, 255, 0.18);
     --clr-primary-variant: #4CAF50;
     --clr-dark-variant: #f5f5f5;
-    --clr-color-background: #000000d3;
-    --clr-theme:white;
+    --clr-color-background: #333;
+    --clr-theme: white;
     background: var(--clr-color-background);
     color: var(--clr-white);
 }
-#dark-mode-button{
+
+#dark-mode-button {
     color: var(--clr-theme);
 }
 
@@ -70,7 +71,7 @@ body {
 
 .container {
     display: grid;
-    width: 96%;
+    width: 99%;
     gap: 1.8rem;
     grid-template-columns: 1fr 7fr 1fr;
     margin: 0 auto;
@@ -142,44 +143,49 @@ b {
 
 
 /* aside */
-aside {
-    height: 100vh;
-}
-.logo{
+
+.logo {
     color: var(--clr-dark);
 }
 
-aside.top {
-    background-color: var(--clr-white);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1.4rem;
-}
-
-aside.logo {
-    display: flex;
+aside .logo {
     gap: 1rem;
 }
 
+aside .logo :nth-child(2) {
+    display: none;
+}
+
 /* sidebar */
-aside.sidebar {
-    background-color: var(--clr-white);
+aside .sidebar {
+    background-color: var(--clr-color-background);
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 88vh;
     position: relative;
     top: 1rem;
+    border-radius: 12px;
 }
+
 
 aside h3 {
     font-weight: 400;
 }
 
-aside.sidebar a {
+aside .sidebar a {
     display: flex;
     color: var(--clr-info-dark);
-    margin-left: 2rem;
+    margin-left: 1rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all 0.1s ease-in;
+}
+
+aside .sidebar .ntd {
+    display: flex;
+    color: var(--clr-info-dark);
+    margin-left: 1rem;
     gap: 1rem;
     align-items: center;
     height: 3.2rem;
@@ -197,7 +203,7 @@ aside .sidebar a:last-child {
     width: 100%;
 }
 
-aside .sidebar a.active {
+aside .sidebar a:active {
     background: var(--clr-light);
     color: var(--clr-primary);
     margin-left: 0;
@@ -227,6 +233,8 @@ aside .sidebar a span.msg_count {
     border-radius: var(--border-radius-1);
 }
 
+
+
 /* main section */
 main {
     margin-top: 1.4rem;
@@ -246,16 +254,17 @@ main .date {
     border-radius: var(--border-radius-1);
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
-    box-shadow:var(--box-shadow) ;
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
     margin: 30px 0;
 }
-main .date:hover{
+
+main .date:hover {
     box-shadow: none;
     cursor: pointer;
 }
 
-#DATE{
+#DATE {
     cursor: pointer;
 }
 
@@ -289,7 +298,7 @@ main .insights>div span {
     font-size: 2rem;
 }
 
-#income2{
+#income2 {
     background: rgb(21, 194, 220);
 }
 
@@ -352,7 +361,7 @@ main .insights svg circle {
     stroke-width: 5;
 }
 
-.sales{
+.sales {
     width: 100%;
 }
 
@@ -449,12 +458,8 @@ main .recent_order a {
 
 .right .theme-toggler {
     background-color: var(--clr-white);
-    display: flex;
-    justify-content: space-between;
-    height: 1.6rem;
-    width: 4.2rem;
+    background: var(--clr-color-background);
     cursor: pointer;
-    border-radius: var(--border-radius-1);
 }
 
 .theme-toggler {
@@ -462,7 +467,6 @@ main .recent_order a {
     display: flex;
     justify-content: space-between;
     height: 1.6rem;
-    width: 4.2rem;
     border-radius: var(--border-radius-1);
 }
 
@@ -509,9 +513,18 @@ main .recent_order a {
 }
 
 /* recent updates */
+.recent_update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
 .right .recent_updates {
     margin-top: 1rem;
-    margin-left: -20px;
+    /* margin-left: -20px; */
 }
 
 .right .recent_updates .updates {
@@ -595,7 +608,7 @@ main .recent_order a {
     background-color: var(--clr-danger);
 }
 
-.add_products div {
+.add_products {
     display: flex;
     height: 60px;
     width: 100px;
@@ -604,7 +617,7 @@ main .recent_order a {
     align-items: center;
     border: 2px dashed;
     color: var(--clr-dark-variant);
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 
 /* Media Queries */
@@ -617,7 +630,10 @@ main .recent_order a {
         color: var(--clr-dark);
         position: absolute;
         left: 1rem;
+    }
 
+    .right .theme-toggler {
+        background: none;
     }
 
     .container {
@@ -632,6 +648,7 @@ main .recent_order a {
         justify-content: end;
         align-items: center;
         padding: 0 0.8rem;
+        /* background: var(--clr-color-background); */
         background-color: var(--clr-white);
         width: 100%;
         height: 4.6rem;
@@ -644,8 +661,13 @@ main .recent_order a {
         position: fixed;
         width: 18rem;
         z-index: 3;
-        background: var(--clr-white);
+        background-color: var(--clr-color-background);
         display: none;
+    }
+
+
+    aside .logo :nth-child(2) {
+        display: inline;
     }
 
     .container {
@@ -685,10 +707,12 @@ main .recent_order a {
     .sales {
         width: 70%;
     }
+
     .sales_analytics {
         width: 65%;
 
     }
+
     .right {
         margin-top: 2.4rem;
         display: flex;
@@ -737,8 +761,6 @@ main .recent_order a {
     main .recent_order {
         padding: 1rem;
     }
-
-
 
 }
 
