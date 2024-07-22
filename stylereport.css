@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .container {
@@ -16,14 +16,14 @@ body {
     align-items: center;
     height: 100vh;
     padding: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .report-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; 
+    width: 100%;
     max-width: 400px;
     padding: 20px;
     text-align: center;
@@ -50,8 +50,8 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 10px; 
-    width: 100%; 
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .report-card button {
@@ -62,7 +62,7 @@ body {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%; 
+    width: 100%;
 }
 
 .report-card button:hover {
@@ -73,7 +73,6 @@ body {
     display: none;
 }
 
-
 @media (max-width: 768px) {
     .container {
         padding: 5px;
@@ -81,13 +80,13 @@ body {
 
     .report-card {
         max-width: 90%;
-        padding: 15px; 
+        padding: 15px;
     }
 
     .report-card input,
     .report-card select,
     .report-card textarea {
-        padding: 8px; 
+        padding: 8px;
     }
 
     .report-card button {
@@ -95,14 +94,13 @@ body {
     }
 }
 
-/* For mobile phones */
 @media (max-width: 480px) {
     .container {
-        padding: 5px; 
+        padding: 5px;
     }
 
     .report-card {
-        max-width: 100%; 
+        max-width: 100%;
         padding: 10px;
     }
 
@@ -113,6 +111,6 @@ body {
     }
 
     .report-card button {
-        padding: 8px; 
+        padding: 8px;
     }
 }
