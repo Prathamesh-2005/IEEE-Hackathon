@@ -7,28 +7,38 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
+/* Product card styling */
 .product-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 200px;
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Responsive image styling */
 .product-image {
     width: 100%;
     height: auto;
+    max-height: 150px; /* Limit the height to maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area */
 }
 
 .product-title {
@@ -45,4 +55,88 @@ body {
     font-size: 16px;
     color: #e67e22;
     font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+}
+
+/* Mobile phones and very small screens */
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        padding: 10px;
+        overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-title {
+        font-size: 14px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+}
+
+/* Landscape mode on small screens */
+@media (orientation: landscape) and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
 }
