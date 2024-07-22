@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        
+
         // Get form data
         const formData = new FormData(form);
         const name = formData.get('name');

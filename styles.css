@@ -58,7 +58,7 @@ body.dark-mode {
 }
 
 body {
-   
+
     background: black;
     font-family: 'Poppins', sans-serif;
     width: 100vw;
@@ -268,7 +268,6 @@ main .date:hover {
 
 #DATE {
     cursor: pointer;
-    color: var(--clr-theme);
 }
 
 main .insights {

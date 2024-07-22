@@ -1,4 +1,5 @@
 body {
+    background-image: url(download\ \(11\).jpeg);
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
@@ -32,4 +33,3 @@ canvas {
     width: 100% !important;
     height: 225px !important;
 }
-

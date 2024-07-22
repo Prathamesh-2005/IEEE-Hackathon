@@ -1,5 +1,5 @@
 body {
-    /* background-image: url(assets/download\ \(7\).jpeg); */
+    background-image: url(download\ \(11\).jpeg);
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     display: flex;
@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 120px;
     box-shadow: #555;
 }
 
@@ -24,14 +24,16 @@ body {
     padding: 20px;
     width: 400px;
     text-align: left;
-    border-top: 5px solid #4CAF50; /* Add color border to the top */
+    border-top: 5px solid #4CAF50;
+    /* Add color border to the top */
 }
 
 .customer-card h2 {
     margin-top: 0;
     text-align: center;
     color: #333;
-    border-bottom: 2px solid #4CAF50; /* Add a bottom border to the heading */
+    border-bottom: 2px solid #4CAF50;
+    /* Add a bottom border to the heading */
     padding-bottom: 10px;
 }
 
