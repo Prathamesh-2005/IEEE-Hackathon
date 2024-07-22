@@ -33,6 +33,13 @@ Open the index.html file in your preferred web browser to view the application.
 
 ![WhatsApp Image 2024-07-23 at 00 13 02_27a4f48e](https://github.com/user-attachments/assets/27eee55d-67cb-40aa-98fd-b8c888aae412)
 
+### Dashboard
+
+![WhatsApp Image 2024-07-23 at 00 14 06_54872b89](https://github.com/user-attachments/assets/bc0c25c4-7aa7-4085-831d-ece1de60e4e7)
+
+![WhatsApp Image 2024-07-23 at 00 14 05_4a88519f](https://github.com/user-attachments/assets/1d4d304e-9731-422f-8e7d-f8f90f33eab1)
+
+
 ## Usage
 Dashboard View: Overview of financial data.
 Income: Track and categorize income sources.
