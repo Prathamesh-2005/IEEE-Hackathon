@@ -4,16 +4,15 @@ body {
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    margin: 0;
+    flex-wrap: wrap;
 }
 
 .card-container {
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px;
+    width: 30vw;
+    margin: 60px;
     box-shadow: #555;
 }
 
@@ -22,7 +21,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 400px;
+    width: 100%;
     text-align: left;
     border-top: 5px solid #4CAF50;
     /* Add color border to the top */
@@ -90,4 +89,15 @@ body {
 
 .customer-status.inactive {
     background-color: #f44336;
+}
+
+@media screen and (max-width:700px) {
+    .card-container{
+        width: 100vw;
+        margin: auto;
+    }
+    .customer-card {
+        width: 250px;
+        margin: 0 auto;
+    }
 }
