@@ -8,14 +8,17 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .card-container {
-    padding: 100px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     cursor: pointer;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .message-card {
@@ -25,19 +28,19 @@ body {
     display: flex;
     overflow: hidden;
     width: 400px;
-    max-width: 90%; /* Responsive width */
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .platform {
-    width: 100px;
-    /* Increased width for better visibility */
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     font-weight: bold;
     padding: 10px;
-    /* Added padding for better spacing */
+    box-sizing: border-box;
 }
 
 .facebook {
@@ -55,6 +58,7 @@ body {
 .message-content {
     padding: 20px;
     flex: 1;
+    box-sizing: border-box;
 }
 
 .message-content h3 {
@@ -77,11 +81,14 @@ body {
     body {
         flex-direction: column;
         padding: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     
     .card-container {
-        padding: 20px;
+        padding: 10px;
         gap: 10px;
+        align-items: center;
     }
 
     .message-card {
@@ -93,13 +100,13 @@ body {
     }
 
     .platform {
-        width: 80px;
+        width: 60px;
     }
 }
 
 @media (max-width: 480px) {
     .platform {
-        width: 60px;
+        width: 50px;
         font-size: 0.8em;
         padding: 5px;
     }
