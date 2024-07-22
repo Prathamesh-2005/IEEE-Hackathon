@@ -52,9 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addExpense = function (index) {
         const amount = parseFloat(prompt('Enter expense amount:'));
         if (!isNaN(amount) && amount > 0) {
-            budgets[index].spent += amount;
-            updateBudgetList();
-            updateProgressBars();
+            if (budgets[index].spent + amount <= budgets[index].amount) {
+                budgets[index].spent += amount;
+                updateBudgetList();
+                updateProgressBars();
+            } else {
+                alert('Expense exceeds the budget amount!');
+            }
         }
     }
 });

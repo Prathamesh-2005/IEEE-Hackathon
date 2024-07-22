@@ -1,4 +1,6 @@
 body {
+    background-image: url(assets/download\ \(7\).jpeg);
+    padding: 10px;
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     display: flex;
@@ -9,9 +11,11 @@ body {
 }
 
 .card-container {
+    padding: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    cursor: pointer;
 }
 
 .message-card {
