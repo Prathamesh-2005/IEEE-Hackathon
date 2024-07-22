@@ -27,6 +27,12 @@ cd IEEE-Hackathon
 2.Open the project:
 Open the index.html file in your preferred web browser to view the application.
 
+## Website Screenshots
+
+### Login Page
+
+![WhatsApp Image 2024-07-23 at 00 13 02_27a4f48e](https://github.com/user-attachments/assets/27eee55d-67cb-40aa-98fd-b8c888aae412)
+
 ## Usage
 Dashboard View: Overview of financial data.
 Income: Track and categorize income sources.
