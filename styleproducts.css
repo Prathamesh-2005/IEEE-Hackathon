@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Product card styling */
+
 .product-card {
     background-color: white;
     border-radius: 10px;
@@ -33,12 +33,11 @@ body {
     align-items: center;
 }
 
-/* Responsive image styling */
 .product-image {
     width: 100%;
     height: auto;
-    max-height: 150px; /* Limit the height to maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the area */
+    max-height: 150px;
+    object-fit: cover; 
 }
 
 .product-title {
@@ -57,9 +56,9 @@ body {
     font-weight: bold;
 }
 
-/* Media queries for responsiveness */
 
-/* Tablets and smaller screens */
+
+
 @media (max-width: 768px) {
     .container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -84,12 +83,11 @@ body {
     }
 }
 
-/* Mobile phones and very small screens */
 @media (max-width: 480px) {
     body {
         height: auto;
         padding: 10px;
-        overflow-y: auto; /* Enable vertical scrolling if content overflows */
+        overflow-y: auto; 
     }
 
     .container {
@@ -116,7 +114,6 @@ body {
     }
 }
 
-/* Landscape mode on small screens */
 @media (orientation: landscape) and (max-width: 768px) {
     .container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
