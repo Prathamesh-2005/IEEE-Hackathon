@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 30vw;
-    margin: 60px;
+    margin: auto;
     box-shadow: #555;
 }
 
@@ -98,6 +98,6 @@ body {
     }
     .customer-card {
         width: 250px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 }
