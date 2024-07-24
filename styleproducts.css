@@ -17,8 +17,11 @@ body {
     /* background-color: #4CAF50; */
     color: black;
     border: none;
-    padding: 10px 20px;
+    gap: 5px;
+    padding: 10px 15px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     border-radius: 5px;
     position: fixed;

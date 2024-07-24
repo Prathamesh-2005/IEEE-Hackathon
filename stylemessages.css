@@ -37,8 +37,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* background-color: #4CAF50; */
     color: black;
+    display: flex;
+    align-items: center;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
