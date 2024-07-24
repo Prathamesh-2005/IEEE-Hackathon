@@ -1,45 +1,53 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./stylelogin.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
     <title>Login Page</title>
 </head>
-
 <body>
-
-    <div class="container-fluid">
-        <form class="mx-auto">
+  
+    <div class="container-fluid login-container">
+        <form id="login-form" class="mx-auto login-form">
             <h4 class="text-center">Login</h4>
             <div class="mb-3 mt-5">
-                <label for="exampleInputEmail1" class="form-label">User Name</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="login-username" required>
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-                <a href="#" id="forgot-password" class="form-text mt-3">Forgot password?</a>
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="login-password" required>
             </div>
-            <button onclick=login() type="submit" class="btn btn-primary mt-5">Login</button>
-            <script>
-                function login() {
-                    window.location.href = "indexmain.html";
-                }
-            </script>
+            <button type="submit" class="btn btn-primary mt-5">Login</button>
+            <div class="mt-3">
+                <a href="signup.html" id="signup-link">Don't have an account? Sign up</a>
+            </div>
+        </form>
     </div>
 
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+            // Retrieve user data from localStorage
+            const user = JSON.parse(localStorage.getItem('user'));
+
+            if (user && user.username === username && user.password === password) {
+                alert('Login successful!');
+                // Redirect to your dashboard or any other page
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Invalid username or password');
+            }
+        });
+    </script>
 
 </body>
-
 </html>
