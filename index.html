@@ -12,25 +12,26 @@
 </head>
 <body>
   
-    <div class="container-fluid login-container">
-        <div class="welcome-message text-center">
+    <div class="container-fluid">
+        <div class="welcome-message">
             <h1>Welcome to the Financial Dashboard</h1>
             <p>Please log in to access your financial insights.</p>
         </div>
-        <form id="login-form" class="mx-auto login-form">
+        <form id="login-form" class="mx-auto">
             <h4 class="text-center">Login</h4>
             <div class="mb-3 mt-5">
-              <label for="username" class="form-label">Username</label>
-              <input type="text" class="form-control" id="login-username" required>
+                <label for="login-username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="login-username" required>
             </div>
             <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="login-password" required>
+                <label for="login-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="login-password" required>
             </div>
             <button type="submit" class="btn btn-primary mt-5">Login</button>
             <div class="mt-3">
                 <a href="signup.html" id="signup-link">Don't have an account? Sign up</a>
             </div>
+            <div id="message" class="mt-3"></div>
         </form>
     </div>
 
@@ -43,12 +44,18 @@
             // Retrieve user data from localStorage
             const user = JSON.parse(localStorage.getItem('user'));
 
+            const messageElement = document.getElementById('message');
+
             if (user && user.username === username && user.password === password) {
-                alert('Login successful!');
-                // Redirect to your dashboard or any other page
-                window.location.href = 'indexmain.html';
+                messageElement.textContent = 'Login successful! Redirecting to your dashboard...';
+                messageElement.style.color = 'green';
+                // Redirect after a short delay
+                setTimeout(() => {
+                    window.location.href = 'dashboard.html'; // Update to the actual dashboard URL
+                }, 2000);
             } else {
-                alert('Invalid username or password');
+                messageElement.textContent = 'Invalid username or password';
+                messageElement.style.color = 'red';
             }
         });
     </script>
