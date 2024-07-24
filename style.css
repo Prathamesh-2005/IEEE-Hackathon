@@ -17,6 +17,25 @@ body::before {
     z-index: 1;
 }
 
+.welcome-message {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque white background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.welcome-message h1 {
+    color: #007bff;
+}
+
+.welcome-message p {
+    color: #333;
+}
+
 form {
     position: relative;
     z-index: 2;
@@ -25,6 +44,7 @@ form {
     width: 24% !important;
     background-color: lightgrey; 
     padding: 50px;
+    margin: 0 auto; /* Center the form */
 }
 
 .btn-primary {
@@ -64,6 +84,13 @@ h4 {
 
 #forgot-password:hover {
     text-decoration: underline;
+}
+
+#message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {
