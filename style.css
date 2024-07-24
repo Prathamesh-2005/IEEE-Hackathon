@@ -41,7 +41,7 @@ form {
     position: relative;
     z-index: 2;
     border-radius: 20px;
-    margin-top: 150px !important;
+    margin-top: 80px !important; /* Adjust this value to move the form up */
     width: 24% !important;
     background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
     padding: 50px;
