@@ -25,3 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
         confirmation.classList.remove('hidden');
     });
 });
+
+const goBackButton = document.getElementById('goBackButton');
+goBackButton.addEventListener('click', () => {
+    // Go back in history
+    window.history.back();
+});

@@ -56,3 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize form with default values
     setFormValues(defaultSettings);
 });
+
+const goBackButton = document.getElementById('goBackButton');
+goBackButton.addEventListener('click', () => {
+    // Go back in history
+    window.history.back();
+});

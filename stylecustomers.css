@@ -7,7 +7,24 @@ body {
     height: 100vh;
     flex-wrap: wrap;
 }
+#goBackButton {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: #4CAF50; */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
 
+#goBackButton:hover {
+    box-shadow: none;
+}
 button {
     background-color: #4CAF50;
     color: #FFFFFF;
@@ -16,6 +33,9 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
 .card-container {

@@ -8,7 +8,24 @@ body {
     height: 100vh;
     margin: 0;
 }
+#goBackButton {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: #4CAF50; */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
 
+#goBackButton:hover {
+    box-shadow: none;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -69,4 +86,10 @@ body {
 
 .hidden {
     display: none;
+}
+
+@media screen and (max-width:450px) {
+    .settings-card{
+        width: 60vw;
+    }
 }
