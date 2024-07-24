@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Cards</title>
     <link rel="stylesheet" href="stylecustomers.css">
+    <script>
+        // Get a reference to the button
+        const goBackButton = document.getElementById('goBackButton');
+    
+        // Add a click event listener
+        goBackButton.addEventListener('click', () => {
+            // Go back in history
+            window.history.back();
+        });
+    </script>
+    
 </head>
 
 <body>
+    <header>
+        <button>back</button>
+    </header>
     <div class="card-container">
         <div class="customer-card">
             <h2>Customer List</h2>

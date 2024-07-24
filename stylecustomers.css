@@ -8,6 +8,16 @@ body {
     flex-wrap: wrap;
 }
 
+button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .card-container {
     justify-content: center;
     align-items: center;
