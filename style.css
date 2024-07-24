@@ -26,6 +26,7 @@ body::before {
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for better visibility */
 }
 
 .welcome-message h1 {
@@ -42,9 +43,10 @@ form {
     border-radius: 20px;
     margin-top: 150px !important;
     width: 24% !important;
-    background-color: lightgrey; 
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
     padding: 50px;
     margin: 0 auto; /* Center the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for better visibility */
 }
 
 .btn-primary {
