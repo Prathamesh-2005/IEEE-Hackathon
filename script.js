@@ -5,7 +5,7 @@ function openSidebar() {
   sidebar.style.left = "0";
   sidebar.style.top = "0";
   sidebar.style.zIndex = "12";
-  sidebar.style.width = "180px"; // Set your desired width
+  sidebar.style.width = "215px"; // Set your desired width
   
   // Add event listener to close the sidebar when clicking outside of it
   document.addEventListener('click', closeSidebarOnClickOutside);
@@ -14,8 +14,6 @@ function openSidebar() {
 function closeSidebar() {
   const sidebar = document.getElementById("mySidebar");
   sidebar.style.display = "none";
-  
-  // Remove event listener after closing the sidebar
   document.removeEventListener('click', closeSidebarOnClickOutside);
 }
 

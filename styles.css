@@ -152,13 +152,13 @@ b {
 
 aside .logo {
     gap: 1rem;
+    transition: right 0.2s;
 }
 
 aside .logo :nth-child(2) {
     display: none;
 }
 
-/* sidebar */
 aside .sidebar {
     background-color: var(--clr-color-background);
     display: flex;
@@ -188,6 +188,18 @@ aside .sidebar .ntd {
     display: flex;
     color: var(--clr-info-dark);
     margin-left: 1rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all 0.1s ease-in;
+}
+
+aside .sidebar .ntd1{
+    
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-info-dark);
+    margin:0 5px;
     gap: 1rem;
     align-items: center;
     height: 3.2rem;
@@ -620,10 +632,17 @@ main .recent_order a {
     align-items: center;
     border: 2px dashed;
     color: var(--clr-dark-variant);
-    margin: 20px 0;
+    margin: 20px auto;
+    transition: right 0.3s;
 }
 
 /* Media Queries */
+@media screen and (min-width:600px) {
+    .sidebar{
+        display:block;
+    }
+    
+}
 @media screen and (max-width: 1200px) {
 
     .right .top button {
@@ -641,6 +660,7 @@ main .recent_order a {
 
     .container {
         margin-top: 60px;
+        padding: 0 20px;
     }
 
     .right .top {
@@ -671,6 +691,7 @@ main .recent_order a {
 
     aside .logo :nth-child(2) {
         display: inline;
+        cursor: pointer;
     }
 
     .container {
@@ -699,7 +720,6 @@ main .recent_order a {
     .container {
         width: 100%;
         grid-template-columns: 2fr;
-        padding: 20px;
         box-sizing: border-box;
     }
 
@@ -729,7 +749,7 @@ main .recent_order a {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 765px) {
     aside {
         display: none;
     }
